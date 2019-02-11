@@ -17,7 +17,7 @@ def sudoku(argv):
   p.problema(mat)
 
 
-
+## Funcion para pasar de un vector a una matriz
 def a_Matriz(inicial):
   x = 0
   y = 0
@@ -31,6 +31,8 @@ def a_Matriz(inicial):
       filas = []
   return completo
 
+
+##Funcion para imprimir la matriz como un sudoku
 def printing(matriz):
   print("")
   for x in range(16):
@@ -39,9 +41,24 @@ def printing(matriz):
     print(matriz[int(x/4)][x % 4] + "  | ", end='')
   print("")
 
+## Funcion para designar a cual paso darle prioridad
 def heuristica(matriz):
+  points = 0
   for x in range(4):
-    
+    nums = 0
+    for y in range(4):
+      if (matriz[x][y] != "."):
+        nums +=1
+    points += nums * nums
+
+  for x in range(4):
+    nums = 0
+    for y in range(4):
+      if (matriz[y][x] != "."):
+        nums +=1
+    points += nums * nums
+  return points
+
   
 def actions(matriz):
 

@@ -2,6 +2,12 @@
 #inicio, acciones, heuristica
 def problema(inicial):
   frontera = []
-  visiado = []
+  visitado = []
   estado = inicial
+  final = 0
+
+  if (estado == final):
+    return estado
+  
+
   
