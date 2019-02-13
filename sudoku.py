@@ -14,7 +14,8 @@ def sudoku(argv):
   mat = a_Matriz(argv[1])
   print(mat)
   printing(mat)
-  p.problema(mat)
+  #p.problema(mat)
+  actions(mat)
 
 
 ## Funcion para pasar de un vector a una matriz
@@ -61,9 +62,31 @@ def heuristica(matriz):
 
   
 def actions(matriz):
+  espacios = 0
+  posiciones = []
+  posibilidades = []
+  # Encontrar cuantos espacios vacios hay
+  for x in range(4):
+    for y in range(4):
+      if (matriz[x][y] == "."):
+        posiciones.append(tuple([x,y]))
+        espacios +=1
+  print(posiciones)
+  
+  #Sacar cada una de las posibilidades
+  cont = 0
+  while(cont<espacios):
+    nums = ["1","2","3","4"]
+    for x in range(4):
+      if (matriz[posiciones[cont][0]][x] != "."):
+        nums.remove(matriz[posiciones[cont][0]][x])
 
+    for x in range(4):
+      if (matriz[x][posiciones[cont][1]] != "." and (matriz[x][posiciones[cont][1]] in nums) ):
+        nums.remove(matriz[x][posiciones[cont][1]])
+    print(nums)
 
-
+    cont += 1
 
 if __name__ == "__main__":
   sudoku(sys.argv)
