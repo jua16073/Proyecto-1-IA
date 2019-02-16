@@ -1,6 +1,6 @@
-# archivo para generar el grafo del problema.
-# inicio, acciones, heuristica
 import copy
+import matriz as m
+
 
 
 def graph_search(problema):
@@ -17,7 +17,7 @@ def graph_search(problema):
             estado = path[len(path)-1]
             explorado.append(estado)
             frontera.remove(path)
-
+            m.printing(estado)
 
             if problema.win_condition(estado):
                 return path

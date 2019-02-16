@@ -6,6 +6,7 @@
 import sys
 import problems as p
 import copy
+import matriz as f_mat
 
 # inicio del programa
 
@@ -14,8 +15,8 @@ def sudoku(argv):
     if len(argv[1]) != 16:
         print("No es un sudoku de 4x4")
         return 0
-    mat = a_matriz(argv[1])
-    problem = sudoku_problem()
+    mat = f_mat.a_matriz(argv[1])
+    problem = sudokuProblem()
     problem.inicial = mat
 
     respuesta = p.graph_search(problem)
@@ -23,12 +24,13 @@ def sudoku(argv):
         print(respuesta)
     else:
         for x in respuesta:
-            printing(x)
+            f_mat.printing(x)
 
-class sudoku_problem:
+
+class sudokuProblem:
     inicial = "Colocar estado inicial"
 
-    def actions(self,matriz):
+    def actions(self, matriz):
         espacios = 0
         posiciones = []
         posibilidades = []
@@ -129,31 +131,6 @@ class sudoku_problem:
                 path_seleccionado = x
                 points_winner = points
         return path_seleccionado
-
-
-# Funcion para pasar de un vector a una matriz
-def a_matriz(inicial):
-    x = 0
-    y = 0
-    filas = []
-    completo = []
-    for i in inicial:
-        filas.append(i)
-        x += 1
-        if (x % 4 == 0):
-            completo.append(filas)
-            filas = []
-    return completo
-
-
-# Funcion para imprimir la matriz como un sudoku
-def printing(matriz):
-    print("")
-    for x in range(16):
-        if (x % 4 == 0 and x != 0):
-            print("\n___________________\n", end="")
-        print(matriz[int(x / 4)][x % 4] + "  | ", end='')
-    print("")
 
 
 # Para empezar
