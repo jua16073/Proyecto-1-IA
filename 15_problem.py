@@ -11,15 +11,20 @@ import problems as p
 def inicio(argv):
     if len(argv[1]) != 16:
         return "No es un input valido"
-    mat = f_mat.a_matriz(argv[1])
-    f_mat.printing(mat)
-    mat2 = f_mat.a_matriz("123456789ABCDE.F")
-    problema = Problem15()
-    problema.inicial = mat
-    respuesta = p.graph_search(problema)
-    print("Termino")
-    for x in respuesta:
-        f_mat.printing(x)
+    # mat = f_mat.a_matriz("123456789ABCDFE.")
+    # mat = f_mat.a_matriz("B1E5C73F294D.A68")
+    if es_posible(argv[1]):
+        print("Es resoluble")
+        mat = f_mat.a_matriz(argv[1])
+        f_mat.printing(mat)
+        problema = Problem15()
+        problema.inicial = mat
+        respuesta = p.graph_search(problema)
+        print("Termino")
+        for x in respuesta:
+            f_mat.printing(x)
+    else:
+        print("No se puede resolver")
 
 
 class Problem15:
@@ -80,6 +85,8 @@ class Problem15:
                     puntos += 1
                 if contador == 7 and distancia == 0:
                     puntos += 1
+                if puntos == 2 and estado[2][0] == "9" and estado[3][0] =="D":
+                    puntos += 1
                 contador += 1
             if puntos > puntos_ganador:
                 puntos_ganador = puntos
@@ -103,9 +110,40 @@ class Problem15:
         return distancia
 
 
+def es_posible(inicial):
+    paridad = 0
+    ancho = math.sqrt(len(inicial))
+    fila = 0
+    fila_vacio = 0
+    print(len(inicial))
+
+    for i in range(len(inicial)):
+        if i % ancho == 0:
+            fila += 1
+        if inicial[i] == ".":
+            fila_vacio = copy.deepcopy(fila)
+        for j in range(i+1, len(inicial)):
+            if inicial[i] > inicial[j] and (inicial[j] != "."):
+                paridad += 1
+    print(paridad)
+    if ancho % 2 == 0:
+        if fila_vacio % 2 == 0:
+            return paridad % 2 == 0
+        else:
+            return paridad % 2 != 0
+    else:
+        return paridad % 2 == 0
+
+
 # Para empezar
 if __name__ == "__main__":
     inicio(sys.argv)
     pass
 # A59427.8F16CD3BE
 # F21C856B49A73ED.
+# B1E5C73F294D.A68 Exito en 5-6 mins aprox
+# 98B2AC3.4ED75F61 Exito en 1:32 mins aprox
+# D356E27BAFC481.9 Exito en 5 mins aprox
+# 2F.D4BACE8913765 Exito en 2:17 mins aprox
+# Unsolvable 123456789ABCDFE.
+
