@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2b7c917-c596-4cc1-9e1f-d770f0ad3e4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/15_problem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matriz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/15_problem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/problems.py" beforeDir="false" afterPath="$PROJECT_DIR$/problems.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,60 +16,55 @@
     <session id="-701035158">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.35" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="9" />
+          <entry key="py" value="12" />
+          <entry key="ripio" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="9" />
+          <entry key="Python" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5034" />
+          <entry key="py" value="7198" />
+          <entry key="ripio" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5034" />
+          <entry key="Python" value="7213" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sudoku.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/15_problem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
-              <folding>
-                <element signature="e#105#115#0" expanded="true" />
-                <marker date="1550278369688" expanded="true" signature="3762:3763" ph="..." />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/15_problem.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ripio">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-              <folding>
-                <element signature="e#43#65#0" expanded="true" />
-                <marker date="1550307494447" expanded="true" signature="534:1825" ph="..." />
-                <marker date="1550307494447" expanded="true" signature="2168:3138" ph="..." />
-                <marker date="1550307494447" expanded="true" signature="3135:3136" ph="..." />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -79,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problems.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            <state relative-caret-position="15">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -110,21 +103,24 @@
       <list>
         <option value="$PROJECT_DIR$/sudoku.py" />
         <option value="$PROJECT_DIR$/matriz.py" />
+        <option value="$PROJECT_DIR$/ripio" />
         <option value="$PROJECT_DIR$/problems.py" />
         <option value="$PROJECT_DIR$/15_problem.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="36" />
-    <option name="width" value="811" />
-    <option name="height" value="767" />
+    <option name="x" value="303" />
+    <option name="y" value="143" />
+    <option name="width" value="868" />
+    <option name="height" value="506" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +132,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,7 +163,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15_problem.py" />
-      <option name="PARAMETERS" value="F21C856B49A73ED." />
+      <option name="PARAMETERS" value="A59427.8F16CD3BE" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -189,7 +184,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudoku.py" />
-      <option name="PARAMETERS" value="4.1..142.3.4.4.." />
+      <option name="PARAMETERS" value=".4.13.4.1..4.21." />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -222,14 +217,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="0" width="1330" height="767" extended-state="6" />
+    <frame x="32" y="0" width="1338" height="771" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17056075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18380062" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41965678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4149766" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937598" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -258,8 +254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sudoku.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        <state relative-caret-position="-1257">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="e#105#115#0" expanded="true" />
             <marker date="1550278369688" expanded="true" signature="3762:3763" ph="..." />
@@ -269,24 +265,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problems.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="15">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ripio">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="38" selection-start-line="38" selection-end-line="41" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/15_problem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="31" column="44" lean-forward="true" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="e#43#65#0" expanded="true" />
-            <marker date="1550307494447" expanded="true" signature="534:1825" ph="..." />
-            <marker date="1550307494447" expanded="true" signature="2168:3138" ph="..." />
-            <marker date="1550307494447" expanded="true" signature="3135:3136" ph="..." />
-          </folding>
+        <state relative-caret-position="130">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,74 @@
+def criteria(self, paths):
+    path_seleccionado = None
+    distancia_minima = None
+    for path in paths:
+        estado = path[len(path) - 1]
+        distancia = 0
+        contador = 0
+        bonus = 0.5
+        while contador < 15:
+            x = int(contador / 4)
+            y = int(contador - (x * 4))
+            for h in range(4):
+                for k in range(4):
+                    if estado[h][k].lower() == str(hex(contador + 1).split('x')[-1]):
+                        this = (math.sqrt(math.pow((h - x), 2) + math.pow((k - y), 2)))
+                        distancia += this
+                    if h == x and k == y:
+                        distancia -= bonus
+            contador += 1
+            bonus -= 0.01
+        if distancia_minima is None:
+            distancia_minima = distancia
+            path_seleccionado = path
+        elif distancia < distancia_minima:
+            distancia_minima = distancia
+            path_seleccionado = path
+    print(distancia_minima)
+    return path_seleccionado
+
+
+
+distancia = self.revisar(estado, contador)
+                if distancia != 0:
+                    break;
+                else:
+                    puntos += 1
+                    contador += 1
+
+if contador == 3 and distancia == 0:
+    puntos += 1
+if contador == 7 and distancia == 0:
+    puntos += 1
+contador += 1
+if puntos > puntos_ganador:
+    puntos_ganador = puntos
+    dist_restante = distancia
+    path_seleccionado = path
+elif puntos == puntos_ganador and distancia < dist_restante:
+    dist_restante = distancia
+    path_seleccionado = path
+
+if distancia < dist_restante:
+    dist_restante = distancia
+    path_seleccionado = path
+
+
+
+ puntos = 0
+            contador = 0
+            distancia = 0
+            while contador < 15:
+                distancia += self.revisar(estado, contador)
+                if contador == 3 and distancia == 0:
+                    puntos += 1
+                if contador == 7 and distancia == 0:
+                    puntos += 1
+                contador += 1
+            if puntos > puntos_ganador:
+                puntos_ganador = puntos
+                dist_restante = distancia
+                path_seleccionado = path
+            elif puntos == puntos_ganador and distancia < dist_restante:
+                dist_restante = distancia
+                path_seleccionado = path
