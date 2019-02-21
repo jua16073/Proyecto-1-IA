@@ -72,3 +72,32 @@ if distancia < dist_restante:
             elif puntos == puntos_ganador and distancia < dist_restante:
                 dist_restante = distancia
                 path_seleccionado = path
+
+if contador == 0 and distancia == 0:
+    puntos += 1
+if contador == 3 and distancia == 0:
+    puntos += 1
+if contador == 4 and distancia == 0:
+    puntos += 1
+if contador == 7 and distancia == 0:
+    puntos += 1
+if puntos == 4 and estado[2][0] == "9" and estado[3][0] == "D":
+    puntos += 1
+
+if contador % 4 < 2:
+    if distancia != 0:
+        break;
+    else:
+        puntos += 1
+else:
+    if contador % 4 == 3:
+        if distancia == 0:
+
+'''
+if contador == 3 and distancia == 0:
+    puntos += 1
+if contador == 4 and distancia == 0:
+    puntos += 1
+if puntos == 4 and estado[2][0] == "9" and estado[3][0] == "D":
+    puntos += 1
+'''

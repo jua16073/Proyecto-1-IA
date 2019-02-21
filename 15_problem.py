@@ -11,8 +11,6 @@ import problems as p
 def inicio(argv):
     if len(argv[1]) != 16:
         return "No es un input valido"
-    # mat = f_mat.a_matriz("123456789ABCDFE.")
-    # mat = f_mat.a_matriz("B1E5C73F294D.A68")
     if es_posible(argv[1]):
         print("Es resoluble")
         mat = f_mat.a_matriz(argv[1])
@@ -81,11 +79,15 @@ class Problem15:
             puntos = 0
             while contador < 15:
                 distancia += self.revisar(estado, contador)
+                if contador == 0 and distancia == 0:
+                    puntos += 1
                 if contador == 3 and distancia == 0:
+                    puntos += 1
+                if contador == 4 and distancia == 0:
                     puntos += 1
                 if contador == 7 and distancia == 0:
                     puntos += 1
-                if puntos == 2 and estado[2][0] == "9" and estado[3][0] =="D":
+                if puntos == 4 and estado[2][0] == "9" and estado[3][0] == "D":
                     puntos += 1
                 contador += 1
             if puntos > puntos_ganador:
@@ -96,7 +98,6 @@ class Problem15:
                 dist_restante = distancia
                 path_seleccionado = path
         print(puntos_ganador)
-        print(dist_restante)
         return path_seleccionado
 
     def revisar(self, matriz, num):
@@ -115,7 +116,6 @@ def es_posible(inicial):
     ancho = math.sqrt(len(inicial))
     fila = 0
     fila_vacio = 0
-    print(len(inicial))
 
     for i in range(len(inicial)):
         if i % ancho == 0:
@@ -125,7 +125,7 @@ def es_posible(inicial):
         for j in range(i+1, len(inicial)):
             if inicial[i] > inicial[j] and (inicial[j] != "."):
                 paridad += 1
-    print(paridad)
+
     if ancho % 2 == 0:
         if fila_vacio % 2 == 0:
             return paridad % 2 == 0

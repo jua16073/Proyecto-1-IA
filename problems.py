@@ -8,7 +8,6 @@ def graph_search(problema):
     estado = problema.inicial
     path.append(estado)
     frontera.append(path)
-    estados_visitados = 0
 
     while True:
         if len(frontera):
@@ -17,9 +16,6 @@ def graph_search(problema):
             explorado.append(estado)
             frontera.remove(path)
             m.printing(estado)
-            #print(len(frontera))
-            #estados_visitados += 1
-            #print(estados_visitados)
 
             if problema.win_condition(estado):
                 return path
